@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WorkflowManagementAndroid</string>
+    <string name="login">Đăng nhập</string>
+    <string name="forget_password">Quên mật khẩu</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="password">mật khẩu</string>
+    <string name="usename">tài khoản</string>
+</resources>
