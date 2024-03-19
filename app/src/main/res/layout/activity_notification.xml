@@ -6,15 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".NotificationActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbbar_notice"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        android:orientation="horizontal"
+        android:background="#ACE2E1">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back"
+            android:layout_width="60dp"
+            android:padding="8dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginEnd="40dp"
+            android:text="@string/notice"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_notice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
