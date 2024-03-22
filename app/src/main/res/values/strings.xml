@@ -9,4 +9,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="list_works">Danh sách công việc</string>
     <string name="notice">Thông báo</string>
+    <string name="list_group">Danh sách nhóm</string>
 </resources>

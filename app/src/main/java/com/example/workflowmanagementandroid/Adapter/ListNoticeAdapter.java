@@ -9,9 +9,23 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.workflowmanagementandroid.Model.Notification;
 import com.example.workflowmanagementandroid.R;
 
+import java.util.List;
+
 public class ListNoticeAdapter extends RecyclerView.Adapter<ListNoticeAdapter.ViewHolder> {
+
+
+    private List<Notification> list;
+
+    public List<Notification> getList() {
+        return list;
+    }
+
+    public void setList(List<Notification> list) {
+        this.list = list;
+    }
 
     @NonNull
     @Override
@@ -23,12 +37,15 @@ public class ListNoticeAdapter extends RecyclerView.Adapter<ListNoticeAdapter.Vi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+        holder.titleNotice.setText(list.get(position).getTitle());
+        holder.contentNotice.setText(list.get(position).getContent());
+        holder.imageNotice.setImageResource(list.get(position).getImgNotice());
+        holder.timeNotice.setText(list.get(position).getTime() + "");
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return list.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
