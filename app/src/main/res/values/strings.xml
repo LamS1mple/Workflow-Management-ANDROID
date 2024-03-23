@@ -10,4 +10,8 @@
     <string name="list_works">Danh sách công việc</string>
     <string name="notice">Thông báo</string>
     <string name="list_group">Danh sách nhóm</string>
+    <string name="people">Thành viên</string>
+    <string name="work">Công vệc</string>
+    <string name="home_page">Trang chính</string>
+    <string name="work_management">Quản lý công việc</string>
 </resources>

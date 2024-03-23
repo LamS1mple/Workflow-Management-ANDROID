@@ -5,16 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageView;
 
 import com.example.workflowmanagementandroid.Fragment.AccountFragment;
 import com.example.workflowmanagementandroid.Fragment.GroupFragment;
 import com.example.workflowmanagementandroid.Fragment.HomeFragment;
-import com.example.workflowmanagementandroid.Fragment.NoteFragment;
+import com.example.workflowmanagementandroid.Fragment.WorkFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -40,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     void findId(){
         homeFragment = new HomeFragment();
-        noteFragment = new NoteFragment();
+        noteFragment = new WorkFragment();
         groupFragment = new GroupFragment();
         accountFragment = new AccountFragment();
         replaceFragment(homeFragment);

@@ -1,5 +1,6 @@
 package com.example.workflowmanagementandroid.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.workflowmanagementandroid.Adapter.ListGroupAdapter;
+import com.example.workflowmanagementandroid.GroupActivity;
 import com.example.workflowmanagementandroid.Model.Group;
 import com.example.workflowmanagementandroid.Model.User;
 import com.example.workflowmanagementandroid.R;
@@ -62,7 +64,8 @@ public class GroupFragment extends Fragment {
         listGroupAdapter.setBehaviorToFragmentGroup(new ListGroupAdapter.BehaviorToFragmentGroup() {
             @Override
             public void clickItemGroup(int id) {
-
+                Intent intent = new Intent(getActivity(), GroupActivity.class);
+                startActivity(intent);
             }
         });
 
