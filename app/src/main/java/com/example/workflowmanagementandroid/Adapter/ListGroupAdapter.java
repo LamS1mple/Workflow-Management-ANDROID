@@ -36,6 +36,8 @@ public class ListGroupAdapter extends RecyclerView.Adapter<ListGroupAdapter.View
 
     public void setGroupList(List<Group> groupList) {
         this.groupList = groupList;
+        notifyDataSetChanged();
+
     }
 
     @NonNull

@@ -14,4 +14,12 @@
     <string name="work">Công vệc</string>
     <string name="home_page">Trang chính</string>
     <string name="work_management">Quản lý công việc</string>
+    <string name="update_time_signature">Cập nhật mốc thơi gian</string>
+    <string name="name_work">Tên công việc</string>
+    <string name="content_work">Nội dung công việc</string>
+    <string name="time_finish">Thời gian hoàn thành</string>
+    <string name="list_timeline">Các mốc thời gian</string>
+    <string name="save">Lưu</string>
+    <string name="add_timeline">Thêm mốc thời gian</string>
+    <string name="cancel">Hủy</string>
 </resources>

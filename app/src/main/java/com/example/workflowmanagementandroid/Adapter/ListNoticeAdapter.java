@@ -25,6 +25,7 @@ public class ListNoticeAdapter extends RecyclerView.Adapter<ListNoticeAdapter.Vi
 
     public void setList(List<Notification> list) {
         this.list = list;
+        notifyDataSetChanged();
     }
 
     @NonNull

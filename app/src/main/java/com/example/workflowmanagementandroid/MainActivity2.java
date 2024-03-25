@@ -48,6 +48,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     void replaceFragment(Fragment fragment){
        fragmentManager =  getSupportFragmentManager();
+
        fragmentManager.beginTransaction()
                .replace(R.id.replace_fragment, fragment)
                .commit();
